@@ -8,7 +8,9 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+function addBonusForSelectedDepartment (employeeInfo, bonus, department) {
+  return employeeInfo.filter((employee) => employee.department === department).map((employee) => employee.salary + bonus).reduce((totalsalary, employee) => totalsalary + employee);
+};
 
 const employeeInfo = [
   {
